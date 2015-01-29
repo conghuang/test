@@ -1,0 +1,310 @@
+:tasks
+
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Android tasks
+-------------
+app:androidDependencies - Displays the Android dependencies of the project
+app:signingReport - Displays the signing info for each variant
+
+Build tasks
+-----------
+app:assemble - Assembles all variants of all applications and secondary packages. [app:assembleDebug, app:assembleRelease]
+app:assembleDebug - Assembles all Debug builds
+    app:checkDebugManifest
+    app:compileDebugAidl
+    app:compileDebugJava
+    app:compileDebugNdk
+    app:compileDebugRenderscript
+    app:dexDebug
+    app:generateDebugAssets
+    app:generateDebugBuildConfig
+    app:generateDebugResValues
+    app:generateDebugResources
+    app:generateDebugSources
+    app:mergeDebugAssets
+    app:mergeDebugResources
+    app:packageDebug
+    app:preBuild
+    app:preDebugBuild
+    app:preDexDebug
+    app:preReleaseBuild
+    app:prepareComAndroidSupportAppcompatV72103Library - Prepare com.android.support:appcompat-v7:21.0.3
+    app:prepareComAndroidSupportSupportV42103Library - Prepare com.android.support:support-v4:21.0.3
+    app:prepareDebugDependencies
+    app:processDebugJavaRes
+    app:processDebugManifest
+    app:processDebugResources
+    app:validateDebugSigning
+    app:zipalignDebug
+app:assembleDebugTest - Assembles the Test build for the Debug build
+    app:checkDebugManifest
+    app:compileDebugAidl
+    app:compileDebugJava
+    app:compileDebugRenderscript
+    app:compileDebugTestAidl
+    app:compileDebugTestJava
+    app:compileDebugTestNdk
+    app:compileDebugTestRenderscript
+    app:dexDebugTest
+    app:generateDebugAssets
+    app:generateDebugBuildConfig
+    app:generateDebugResValues
+    app:generateDebugResources
+    app:generateDebugSources
+    app:generateDebugTestAssets
+    app:generateDebugTestBuildConfig
+    app:generateDebugTestResValues
+    app:generateDebugTestResources
+    app:generateDebugTestSources
+    app:mergeDebugAssets
+    app:mergeDebugResources
+    app:mergeDebugTestAssets
+    app:mergeDebugTestResources
+    app:packageDebugTest
+    app:preBuild
+    app:preDebugBuild
+    app:preDebugTestBuild
+    app:preDexDebugTest
+    app:preReleaseBuild
+    app:prepareComAndroidSupportAppcompatV72103Library - Prepare com.android.support:appcompat-v7:21.0.3
+    app:prepareComAndroidSupportSupportV42103Library - Prepare com.android.support:support-v4:21.0.3
+    app:prepareDebugDependencies
+    app:prepareDebugTestDependencies
+    app:processDebugManifest
+    app:processDebugResources
+    app:processDebugTestJavaRes
+    app:processDebugTestManifest
+    app:processDebugTestResources
+    app:validateDebugSigning
+app:assembleRelease - Assembles all Release builds
+    app:checkReleaseManifest
+    app:compileReleaseAidl
+    app:compileReleaseJava
+    app:compileReleaseNdk
+    app:compileReleaseRenderscript
+    app:dexRelease
+    app:generateReleaseAssets
+    app:generateReleaseBuildConfig
+    app:generateReleaseResValues
+    app:generateReleaseResources
+    app:generateReleaseSources
+    app:lintVitalRelease - Runs lint on just the fatal issues in the Release build
+    app:mergeReleaseAssets
+    app:mergeReleaseResources
+    app:packageRelease
+    app:preBuild
+    app:preDebugBuild
+    app:preDexRelease
+    app:preReleaseBuild
+    app:prepareComAndroidSupportAppcompatV72103Library - Prepare com.android.support:appcompat-v7:21.0.3
+    app:prepareComAndroidSupportSupportV42103Library - Prepare com.android.support:support-v4:21.0.3
+    app:prepareReleaseDependencies
+    app:processReleaseJavaRes
+    app:processReleaseManifest
+    app:processReleaseResources
+app:build - Assembles and tests this project. [app:assemble, app:check]
+app:buildDependents - Assembles and tests this project and all projects that depend on it. [app:build]
+app:buildNeeded - Assembles and tests this project and all projects it depends on. [app:build]
+app:clean - Deletes the build directory.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build. [incubating]
+wrapper - Generates Gradle wrapper files. [incubating]
+
+Help tasks
+----------
+components - Displays the components produced by root project 'MyApplication'. [incubating]
+app:components - Displays the components produced by project ':app'. [incubating]
+dependencies - Displays all dependencies declared in root project 'MyApplication'.
+app:dependencies - Displays all dependencies declared in project ':app'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'MyApplication'.
+app:dependencyInsight - Displays the insight into a specific dependency in project ':app'.
+help - Displays a help message.
+app:help - Displays a help message.
+projects - Displays the sub-projects of root project 'MyApplication'.
+app:projects - Displays the sub-projects of project ':app'.
+properties - Displays the properties of root project 'MyApplication'.
+app:properties - Displays the properties of project ':app'.
+tasks - Displays the tasks runnable from root project 'MyApplication' (some of the displayed tasks may belong to subprojects).
+app:tasks - Displays the tasks runnable from project ':app'.
+
+Install tasks
+-------------
+app:installDebug - Installs the Debug build [app:assembleDebug]
+app:installDebugTest - Installs the Test build for the Debug build [app:assembleDebugTest]
+app:uninstallAll - Uninstall all applications. [app:uninstallDebug, app:uninstallDebugTest, app:uninstallRelease]
+app:uninstallDebug - Uninstalls the Debug build
+app:uninstallDebugTest - Uninstalls the Test build for the Debug build
+app:uninstallRelease - Uninstalls the Release build
+
+Verification tasks
+------------------
+app:check - Runs all checks. [app:lint]
+app:connectedAndroidTest - Installs and runs the tests for Build 'debug' on connected devices. [app:assembleDebug, app:assembleDebugTest]
+app:connectedCheck - Runs all device checks on currently connected devices. [app:connectedAndroidTest]
+app:deviceCheck - Runs all device checks using Device Providers and Test Servers.
+app:lint - Runs lint on all variants.
+    app:checkDebugManifest
+    app:checkReleaseManifest
+    app:compileDebugAidl
+    app:compileDebugJava
+    app:compileDebugRenderscript
+    app:compileLint
+    app:compileReleaseAidl
+    app:compileReleaseJava
+    app:compileReleaseRenderscript
+    app:generateDebugAssets
+    app:generateDebugBuildConfig
+    app:generateDebugResValues
+    app:generateDebugResources
+    app:generateDebugSources
+    app:generateReleaseAssets
+    app:generateReleaseBuildConfig
+    app:generateReleaseResValues
+    app:generateReleaseResources
+    app:generateReleaseSources
+    app:mergeDebugAssets
+    app:mergeDebugResources
+    app:mergeReleaseAssets
+    app:mergeReleaseResources
+    app:preBuild
+    app:preDebugBuild
+    app:preReleaseBuild
+    app:prepareComAndroidSupportAppcompatV72103Library - Prepare com.android.support:appcompat-v7:21.0.3
+    app:prepareComAndroidSupportSupportV42103Library - Prepare com.android.support:support-v4:21.0.3
+    app:prepareDebugDependencies
+    app:prepareReleaseDependencies
+    app:processDebugManifest
+    app:processDebugResources
+    app:processReleaseManifest
+    app:processReleaseResources
+app:lintDebug - Runs lint on the Debug build
+    app:checkDebugManifest
+    app:compileDebugAidl
+    app:compileDebugJava
+    app:compileDebugRenderscript
+    app:compileLint
+    app:generateDebugAssets
+    app:generateDebugBuildConfig
+    app:generateDebugResValues
+    app:generateDebugResources
+    app:generateDebugSources
+    app:mergeDebugAssets
+    app:mergeDebugResources
+    app:preBuild
+    app:preDebugBuild
+    app:preReleaseBuild
+    app:prepareComAndroidSupportAppcompatV72103Library - Prepare com.android.support:appcompat-v7:21.0.3
+    app:prepareComAndroidSupportSupportV42103Library - Prepare com.android.support:support-v4:21.0.3
+    app:prepareDebugDependencies
+    app:processDebugManifest
+    app:processDebugResources
+app:lintRelease - Runs lint on the Release build
+    app:checkReleaseManifest
+    app:compileLint
+    app:compileReleaseAidl
+    app:compileReleaseJava
+    app:compileReleaseRenderscript
+    app:generateReleaseAssets
+    app:generateReleaseBuildConfig
+    app:generateReleaseResValues
+    app:generateReleaseResources
+    app:generateReleaseSources
+    app:mergeReleaseAssets
+    app:mergeReleaseResources
+    app:preBuild
+    app:preDebugBuild
+    app:preReleaseBuild
+    app:prepareComAndroidSupportAppcompatV72103Library - Prepare com.android.support:appcompat-v7:21.0.3
+    app:prepareComAndroidSupportSupportV42103Library - Prepare com.android.support:support-v4:21.0.3
+    app:prepareReleaseDependencies
+    app:processReleaseManifest
+    app:processReleaseResources
+
+Other tasks
+-----------
+app:compileDebugSources
+    app:checkDebugManifest
+    app:compileDebugAidl
+    app:compileDebugJava
+    app:compileDebugNdk
+    app:compileDebugRenderscript
+    app:generateDebugAssets
+    app:generateDebugBuildConfig
+    app:generateDebugResValues
+    app:generateDebugResources
+    app:generateDebugSources
+    app:mergeDebugAssets
+    app:mergeDebugResources
+    app:preBuild
+    app:preDebugBuild
+    app:preReleaseBuild
+    app:prepareComAndroidSupportAppcompatV72103Library - Prepare com.android.support:appcompat-v7:21.0.3
+    app:prepareComAndroidSupportSupportV42103Library - Prepare com.android.support:support-v4:21.0.3
+    app:prepareDebugDependencies
+    app:processDebugManifest
+    app:processDebugResources
+app:compileDebugTestSources
+    app:checkDebugManifest
+    app:compileDebugAidl
+    app:compileDebugJava
+    app:compileDebugRenderscript
+    app:compileDebugTestAidl
+    app:compileDebugTestJava
+    app:compileDebugTestNdk
+    app:compileDebugTestRenderscript
+    app:generateDebugAssets
+    app:generateDebugBuildConfig
+    app:generateDebugResValues
+    app:generateDebugResources
+    app:generateDebugSources
+    app:generateDebugTestAssets
+    app:generateDebugTestBuildConfig
+    app:generateDebugTestResValues
+    app:generateDebugTestResources
+    app:generateDebugTestSources
+    app:mergeDebugAssets
+    app:mergeDebugResources
+    app:mergeDebugTestAssets
+    app:mergeDebugTestResources
+    app:preBuild
+    app:preDebugBuild
+    app:preDebugTestBuild
+    app:preReleaseBuild
+    app:prepareComAndroidSupportAppcompatV72103Library - Prepare com.android.support:appcompat-v7:21.0.3
+    app:prepareComAndroidSupportSupportV42103Library - Prepare com.android.support:support-v4:21.0.3
+    app:prepareDebugDependencies
+    app:prepareDebugTestDependencies
+    app:processDebugManifest
+    app:processDebugResources
+    app:processDebugTestManifest
+    app:processDebugTestResources
+app:compileReleaseSources
+    app:checkReleaseManifest
+    app:compileReleaseAidl
+    app:compileReleaseJava
+    app:compileReleaseNdk
+    app:compileReleaseRenderscript
+    app:generateReleaseAssets
+    app:generateReleaseBuildConfig
+    app:generateReleaseResValues
+    app:generateReleaseResources
+    app:generateReleaseSources
+    app:mergeReleaseAssets
+    app:mergeReleaseResources
+    app:preBuild
+    app:preDebugBuild
+    app:preReleaseBuild
+    app:prepareComAndroidSupportAppcompatV72103Library - Prepare com.android.support:appcompat-v7:21.0.3
+    app:prepareComAndroidSupportSupportV42103Library - Prepare com.android.support:support-v4:21.0.3
+    app:prepareReleaseDependencies
+    app:processReleaseManifest
+    app:processReleaseResources
+
+BUILD SUCCESSFUL
+
+Total time: 8.589 secs
